@@ -1,0 +1,41 @@
+package Praktek5;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+/**
+ *
+ * @author Yonieq Praba Saputra
+ */
+public class Aplikasi {
+    
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Halo");
+        frame.setSize(300, 200);
+        
+        frame.setLayout(new BorderLayout());
+        
+        JLabel lblNama = new JLabel();
+        lblNama.setText("Yonieq");
+        //frame.add(lblNama, BorderLayout.WEST);
+        JLabel lbNim = new JLabel();
+        lbNim.setText("17090131");
+        //frame.add(lbNim, BorderLayout.CENTER);
+        
+        JButton btnSimpan = new JButton("Simpan");
+        frame.add(btnSimpan, BorderLayout.EAST);
+        
+        JPanel westPanel = new JPanel();
+        westPanel.setLayout(new GridLayout(3, 1));
+        frame.add(lblNama);
+        frame.add(lbNim);
+        
+        frame.setVisible(true);
+    }
+     
+}
